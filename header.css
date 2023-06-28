@@ -24,7 +24,6 @@ display: inline-block;
     padding: 1em;
 }
 
-
 .lista-menu{
     display: none;
     position: absolute;
@@ -32,16 +31,19 @@ display: inline-block;
     width: 60vw;
 }
 
-.conteiner__botao:checked  .lista-menu{
+.conteiner__botao:checked ~ .lista-menu{
     display: block;
 }
-.lista-menu__titulo
-.lista-menu{
-    padding: 1lem;
+
+.lista-menu__titulo, 
+.lista-menu__item {
+    padding: 1em;
     background-color: var(--branco);
 }
+
 .lista-menu__titulo{
-     color: var(--laranja);
+    color: var(--laranja);
+    font-weight: 700;
 }
 
 .lista-menu__link{
@@ -52,4 +54,6 @@ display: inline-block;
     text-transform: uppercase;
 }
 
-
+.conteiner__botao{
+    display: none;
+}
